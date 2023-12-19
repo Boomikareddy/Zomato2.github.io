@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="zomato.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+
+        .feedback-container {
+            margin-top: 20px;
+        }
+
+        .feedback {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .rating-container {
+            margin-bottom: 20px;
+        }
+
+        select {
+            font-size: 18px;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <img src="Thank-you.jpg" alt="Thank You">
+
+    <div class="feedback-container">
+        <p class="feedback">Leave your feedback:</p>
+        <div class="rating-container">
+            <select id="rating" name="rating">
+                <option value="5">&#9733;&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="4">&#9733;&#9733;&#9733;&#9733;</option>
+                <option value="3">&#9733;&#9733;&#9733;</option>
+                <option value="2">&#9733;&#9733;</option>
+                <option value="1">&#9733;</option>
+            </select>
+        </div>
+    </div>
+
+    <a href="index.html"><button type="submit">Submit</button></a>
+</body>
+</html>

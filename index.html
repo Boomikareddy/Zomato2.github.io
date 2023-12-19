@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="zomato.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <style>
+        body {
+            background-color: #ed5b4b;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: hidden; 
+        }
+
+        table {
+            width: 100%;
+        }
+
+        td {
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .flex-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .text-left {
+            text-align: left;
+        }
+
+        .search-container {
+            margin-top: 20px;
+            position: relative;
+        }
+
+        input[type="text"] {
+            color: black;
+            padding: 10px;
+            padding-left: 40px;
+            background: url('searchbar.png') no-repeat 10px center;
+            background-size: 30px;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+
+        input[type="button"] {
+            background-color: white;
+            color: black;
+            cursor: pointer;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 30px;
+        }
+
+        input[type="button"]:hover {
+            background-color: white;
+        }
+
+        img.search-icon {
+            margin-left: 20px;
+            margin-bottom: -14px;
+            background-color: #ed5b4b;
+            width: 60px; 
+            height: 50px; 
+            cursor: pointer;
+        }
+
+        .delivery-boy {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            transform: translateX(100%); 
+            animation-name: DeliveryBoy;
+            animation-duration: 10s;
+            
+        }
+
+        @keyframes DeliveryBoy {
+            0% {
+                transform: translateX(0%); 
+            }
+            10% {
+                transform: translateX(10%); 
+            }
+            20% {
+                transform: translateX(20%); 
+            }
+            30% {
+                transform: translateX(30%); 
+            }
+            40% {
+                transform: translateX(40%); 
+            }
+            50% {
+                transform: translateX(50%); 
+            }
+            60% {
+                transform: translateX(60%); 
+            }
+            70% {
+                transform: translateX(70%); 
+            }
+            80% {
+                transform: translateX(80%); 
+            }
+            90% {
+                transform: translateX(90%); 
+            }
+            100% {
+                transform: translateX(100%);
+            }
+        }
+
+        footer {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background-color: #333;
+            padding: 10px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <table>
+        <tr>
+            <td><h1>Zomato</h1></td>
+            <td><a href="order.html">Orders</a></td>
+            <td><a href="Login.html">Login</a></td>
+            <td><a href="createaccount.html">Create an Account</a></td>
+            <td><a href="about.html">About Us</a></td>
+        </tr>
+    </table>
+
+    <br><br><br><br><br><br><br><br>
+
+    <div class="flex-container">
+        <div class="text-left">
+            <h1>Find the best restaurants, <br>cafés, and bars in<br><a href="location.html">Location</a></h1>
+
+            <div class="search-container">
+                <a href="Search.html">
+                    <input type="text" placeholder="Search" style="background-color: white;" readonly>
+                    <img class="search-icon" src="searchicon.png" alt="search">
+                </a>
+            </div>
+        </div>
+
+        <img src="burgers.gif" alt="image of burger" width="450px" height="450px">
+
+        <img class="delivery-boy" src="delivery_boy.gif" alt="deliveryboy" width="150px" height="150px">
+    </div>
+
+    <footer style="background-color: #ed5b4b;color: white;">
+          Get the App At Playstore
+    </footer>
+
+</body>
+</html>

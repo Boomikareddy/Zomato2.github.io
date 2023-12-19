@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="zomato.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>State Selection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color:#ed5b4b;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        h1 {
+            color:white;
+            margin-top: 50px;
+        }
+
+        form {
+            margin: 20px;
+        }
+
+        label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        select {
+            font-size: 16px;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Select a State in India</h1>
+
+    <form action="index.html">
+        <label for="stateSelect">Choose a state:</label>
+        <select id="stateSelect" name="state">
+            <option value="andhra_pradesh">Andhra Pradesh</option>
+            <option value="arunachal_pradesh">Arunachal Pradesh</option>
+            <option value="assam">Assam</option>
+            <option value="bihar">Bihar</option>
+            <option value="chhattisgarh">Chhattisgarh</option>
+            <option value="goa">Goa</option>
+            <option value="gujarat">Gujarat</option>
+            <option value="haryana">Haryana</option>
+            <option value="himachal_pradesh">Himachal Pradesh</option>
+            <option value="jammu_kashmir">Jammu and Kashmir</option>
+            <option value="jharkhand">Jharkhand</option>
+            <option value="karnataka">Karnataka</option>
+            <option value="kerala">Kerala</option>
+            <option value="madhya_pradesh">Madhya Pradesh</option>
+            <option value="maharashtra">Maharashtra</option>
+            
+        </select>
+
+        <br>
+
+        <input type="submit" value="Submit" required>
+    </form>
+
+</body>
+</html>
